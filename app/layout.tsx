@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={jakarta.className}>{children}</body>
+      <body className={`container max-w-[90rem] ${jakarta.className}`}>
+        {children}
+      </body>
     </html>
   )
 }
