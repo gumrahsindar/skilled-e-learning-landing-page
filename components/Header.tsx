@@ -57,10 +57,10 @@ const Header = () => {
           />
           <Image
             src='/image-hero-desktop@2x.webp'
-            width={1000}
+            width={950}
             height={1000}
             alt='hero desktop image'
-            className='absolute -right-[32rem] -bottom-36 hidden tablet:hidden laptop:block max-w-fit'
+            className='absolute -right-[32rem] -bottom-40 hidden tablet:hidden laptop:block max-w-fit'
           />
         </div>
       </div>
