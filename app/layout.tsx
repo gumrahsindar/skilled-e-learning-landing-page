@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <div
-          className={`container overflow-x-hidden max-w-[90rem] ${jakarta.className}`}
+          className={`container overflow-x-hidden tablet:overflow-x-visible max-w-[90rem] ${jakarta.className}`}
         >
           {children}
         </div>
