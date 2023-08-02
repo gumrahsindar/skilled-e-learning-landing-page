@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header className='section-padding pt-4 tablet:pt-6'>
+    <header className='overflow-hidden section-padding pt-4 tablet:pt-6'>
       {/* logo & button */}
       <nav className='mb-10 tablet:mb-24 laptop:mb-44 flex justify-between items-center'>
         <div className='relative h-6 w-24 laptop:h-8 laptop:w-32'>
@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <Link
           href='#'
-          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200 z-50'
+          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200'
         >
           Get Started
         </Link>
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
 
         {/* hero image */}
-        <div className='-z-10'>
+        <div className='absolute inset-0 z-50'>
           {/* mobile image */}
           <Image
             src='/image-hero-mobile@2x.webp'
@@ -53,14 +53,14 @@ const Header = () => {
             width={650}
             height={650}
             alt='hero tablet image'
-            className='max-w-fit absolute -right-[20rem] -bottom-20 hidden tablet:block laptop:hidden'
+            className='absolute -right-[20rem] -bottom-20 hidden tablet:block laptop:hidden'
           />
           <Image
             src='/image-hero-desktop@2x.webp'
             width={1000}
             height={1000}
             alt='hero desktop image'
-            className='max-w-fit absolute -right-[32rem] -bottom-52 hidden tablet:hidden laptop:block'
+            className='absolute -right-[32rem] -bottom-36 hidden tablet:hidden laptop:block'
           />
         </div>
       </div>
