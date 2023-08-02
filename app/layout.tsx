@@ -16,10 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={`container overflow-x-hidden max-w-[90rem] ${jakarta.className}`}
-      >
-        {children}
+      <body>
+        <div
+          className={`container overflow-x-hidden tablet:overflow-x-visible max-w-[90rem] ${jakarta.className}`}
+        >
+          {children}
+        </div>
       </body>
     </html>
   )
