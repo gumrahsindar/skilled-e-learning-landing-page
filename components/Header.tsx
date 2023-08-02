@@ -11,14 +11,14 @@ const Header = () => {
         </div>
         <Link
           href='#'
-          className='rounded-3xl px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200 z-50'
+          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200 z-50'
         >
           Get Started
         </Link>
       </nav>
 
       {/* hero container */}
-      <div className='relative flex flex-col tablet:flex-row tablet:justify-between tablet:overflow-x-clip-hidden'>
+      <div className='relative flex flex-col tablet:flex-row tablet:justify-between'>
         {/* hero text & button */}
         <div className='mb-12 max-w-sm desktop:max-w-lg laptop:mb-0 flex flex-col'>
           <h1 className='mb-7 text-midnightBlue font-extrabold text-3xl desktop:text-4xl'>

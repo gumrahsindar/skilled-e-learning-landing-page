@@ -5,7 +5,7 @@ const Features = () => {
   return (
     <section
       id='features'
-      className='section-padding mt-10 tablet:mt-28 laptop:mt-72 bg-gradient-to-t from-[#F0F1FF] to-white'
+      className='section-padding mt-10 tablet:mt-28 laptop:mt-72 pb-20 tablet:pb-24 desktop:pb-36 bg-gradient-to-t from-[#F0F1FF] to-white'
     >
       {/* grid container */}
       <div className='grid gap-y-12 tablet:gap-x-3 tablet:gap-y-16 desktop:gap-x-8 desktop:gap-y-20 tablet:grid-cols-2 laptop:grid-cols-3'>
