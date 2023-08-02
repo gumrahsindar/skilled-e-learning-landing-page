@@ -37,7 +37,7 @@ const Header = () => {
         </div>
 
         {/* hero image */}
-        <div className='absolute inset-0 z-50'>
+        <div className='hero-images'>
           {/* mobile image */}
           <Image
             src='/image-hero-mobile@2x.webp'
