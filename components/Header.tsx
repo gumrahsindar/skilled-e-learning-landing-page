@@ -18,7 +18,7 @@ const Header = () => {
       </nav>
 
       {/* hero container */}
-      <div className='relative flex flex-col tablet:flex-row tablet:justify-between'>
+      <div className='relative flex flex-col tablet:flex-row tablet:justify-between z10'>
         {/* hero text & button */}
         <div className='mb-12 max-w-sm desktop:max-w-lg laptop:mb-0 flex flex-col'>
           <h1 className='mb-7 text-midnightBlue font-extrabold text-3xl desktop:text-4xl'>
@@ -36,16 +36,16 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* hero image */}
-        <div className='hero-images'>
-          {/* mobile image */}
-          <Image
-            src='/image-hero-mobile@2x.webp'
-            width={650}
-            height={650}
-            alt='hero mobile image'
-            className='mx-auto scale-125 tablet:hidden'
-          />
+        {/* mobile image */}
+        <Image
+          src='/image-hero-mobile@2x.webp'
+          width={650}
+          height={650}
+          alt='hero mobile image'
+          className='mx-auto scale-125 tablet:hidden'
+        />
+
+        <div className='absolute inset-0 z-50'>
           {/* tablet image */}
 
           <Image
