@@ -10,7 +10,6 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
       screens: {
         '2xl': '1400px',
       },
@@ -36,7 +35,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        lavenerBlue: '#666CA3',
+        lavenderBlue: '#666CA3',
         midnightBlue: '#13183F',
         slateGray: '#83869A',
         persianRose: '#F74780',
