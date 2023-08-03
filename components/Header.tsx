@@ -11,16 +11,16 @@ const Header = () => {
         </div>
         <Link
           href='#'
-          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200'
+          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200 z-20'
         >
           Get Started
         </Link>
       </nav>
 
       {/* hero container */}
-      <div className='relative flex flex-col tablet:flex-row tablet:justify-between -z-10'>
+      <div className='relative flex flex-col tablet:flex-row tablet:justify-between z-10'>
         {/* hero text & button */}
-        <div className='mb-12 max-w-sm desktop:max-w-lg laptop:mb-0 flex flex-col'>
+        <div className='mb-12 max-w-sm desktop:max-w-lg laptop:mb-0 flex flex-col z-50'>
           <h1 className='mb-7 text-midnightBlue font-extrabold text-3xl desktop:text-4xl'>
             Maximize skill, minimize budget
           </h1>
