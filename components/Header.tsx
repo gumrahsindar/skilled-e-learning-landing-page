@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header className='overflow-hidden tablet:overflow-visible section-padding pt-4 tablet:pt-6'>
+    <header className='tablet:h-[750px] section-padding pt-4 tablet:pt-6'>
       {/* logo & button */}
       <nav className='mb-10 tablet:mb-24 laptop:mb-44 flex justify-between items-center'>
         <div className='relative h-6 w-24 laptop:h-8 laptop:w-32'>
@@ -45,7 +45,7 @@ const Header = () => {
           className='mx-auto scale-125 tablet:hidden'
         />
 
-        <div className='absolute inset-0 z-50'>
+        <div>
           {/* tablet image */}
 
           <Image
@@ -60,7 +60,7 @@ const Header = () => {
             width={950}
             height={1000}
             alt='hero desktop image'
-            className='absolute -right-[32rem] -bottom-40 hidden tablet:hidden laptop:block max-w-fit'
+            className='absolute -right-[32rem] -bottom-28 hidden tablet:hidden laptop:block min-w-[52rem]'
           />
         </div>
       </div>
