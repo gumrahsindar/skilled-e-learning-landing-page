@@ -3,34 +3,34 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header className='tablet:h-[750px] section-padding pt-4 tablet:pt-6'>
+    <header className="section-padding pt-4 tablet:h-[750px] tablet:pt-6">
       {/* logo & button */}
-      <nav className='mb-10 tablet:mb-24 laptop:mb-44 flex justify-between items-center'>
-        <div className='relative h-6 w-24 laptop:h-8 laptop:w-32'>
-          <Image src='/logo-dark.svg' fill alt='logo' />
+      <nav className="mb-10 flex items-center justify-between tablet:mb-24 laptop:mb-44">
+        <div className="relative h-6 w-24 laptop:h-8 laptop:w-32">
+          <Image src="/logo-dark.svg" fill alt="logo" />
         </div>
         <Link
-          href='#'
-          className='rounded-full px-6 laptop:px-8 py-2.5 laptop:py-4 font-bold text-sm laptop:text-base bg-midnightBlue text-white hover:bg-lavenderBlue duration-200 z-20'
+          href="#"
+          className="z-20 rounded-full bg-midnightBlue px-6 py-2.5 text-sm font-bold text-white duration-200 hover:bg-lavenderBlue laptop:px-8 laptop:py-4 laptop:text-base"
         >
           Get Started
         </Link>
       </nav>
 
       {/* hero container */}
-      <div className='relative flex flex-col tablet:flex-row tablet:justify-between z-10'>
+      <div className="relative z-10 flex flex-col tablet:flex-row tablet:justify-between">
         {/* hero text & button */}
-        <div className='mb-12 max-w-sm desktop:max-w-lg laptop:mb-0 flex flex-col z-50'>
-          <h1 className='mb-7 text-midnightBlue font-extrabold text-3xl desktop:text-4xl'>
+        <div className="z-50 mb-12 flex max-w-sm flex-col laptop:mb-0 desktop:max-w-lg">
+          <h1 className="mb-7 text-3xl font-extrabold text-midnightBlue desktop:text-4xl">
             Maximize skill, minimize budget
           </h1>
-          <p className='mb-6 text-slateGray text-sm desktop:text-base'>
-            Our modern courses across a range of in-demand skills will give you
-            the knowledge you need to live the life you want.
+          <p className="mb-6 text-sm text-slateGray desktop:text-base">
+            Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life
+            you want.
           </p>
           <Link
-            href='#'
-            className='rounded-full w-fit px-10 laptop:px-8 py-4 laptop:py-5 font-bold text-white text-sm laptop:text-base bg-gradient-to-b from-atomicTangerine to-pinkFlamingo hover:opacity-60 duration-200'
+            href="#"
+            className="w-fit rounded-full bg-gradient-to-b from-atomicTangerine to-pinkFlamingo px-10 py-4 text-sm font-bold text-white duration-200 hover:opacity-60 laptop:px-8 laptop:py-5 laptop:text-base"
           >
             Get Started
           </Link>
@@ -38,29 +38,29 @@ const Header = () => {
 
         {/* mobile image */}
         <Image
-          src='/image-hero-mobile@2x.webp'
+          src="/image-hero-mobile@2x.webp"
           width={650}
           height={650}
-          alt='hero mobile image'
-          className='mx-auto scale-125 tablet:hidden'
+          alt="hero mobile image"
+          className="mx-auto scale-125 tablet:hidden"
         />
 
         <div>
           {/* tablet image */}
 
           <Image
-            src='/image-hero-tablet@2x.webp'
+            src="/image-hero-tablet@2x.webp"
             width={650}
             height={650}
-            alt='hero tablet image'
-            className='absolute -right-[20rem] -bottom-20 hidden tablet:block laptop:hidden'
+            alt="hero tablet image"
+            className="absolute -bottom-20 -right-[20rem] hidden tablet:block laptop:hidden"
           />
           <Image
-            src='/image-hero-desktop@2x.webp'
+            src="/image-hero-desktop@2x.webp"
             width={950}
             height={1000}
-            alt='hero desktop image'
-            className='absolute -right-[32rem] -bottom-28 hidden tablet:hidden laptop:block min-w-[52rem]'
+            alt="hero desktop image"
+            className="absolute -bottom-28 -right-[32rem] hidden min-w-[52rem] tablet:hidden laptop:block"
           />
         </div>
       </div>

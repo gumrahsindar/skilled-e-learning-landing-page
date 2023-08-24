@@ -9,19 +9,11 @@ export const metadata: Metadata = {
   description: 'Maximiza skill, minimize budget',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body>
-        <div
-          className={`container overflow-hidden max-w-[90rem] ${jakarta.className}`}
-        >
-          {children}
-        </div>
+        <div className={`container max-w-[90rem] overflow-hidden ${jakarta.className}`}>{children}</div>
       </body>
     </html>
   )
