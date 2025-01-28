@@ -37,7 +37,7 @@ module.exports = {
       colors: {
         lavenderBlue: '#666CA3',
         midnightBlue: '#13183F',
-        slateGray: '#83869A',
+        slateGray: '#73758C',
         persianRose: '#F74780',
         melon: '#FFA7C3',
         pinkFlamingo: '#F02AA6',
