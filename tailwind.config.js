@@ -38,7 +38,7 @@ module.exports = {
         lavenderBlue: '#666CA3',
         midnightBlue: '#13183F',
         slateGray: '#73758C',
-        persianRose: '#F74780',
+        persianRose: '#E60A4F',
         melon: '#FFA7C3',
         pinkFlamingo: '#F02AA6',
         atomicTangerine: '#FF6F48',
